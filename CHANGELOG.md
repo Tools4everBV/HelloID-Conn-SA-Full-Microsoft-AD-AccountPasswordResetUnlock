@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [2.0.0.1] - 2026-09-30
+
+### Fixed
+
+• Set the summaryVisibility of the password field to "Hide element" instead of "Show". This will prevent the generated password to be visible in the logging.
+
 ## [2.0.0.0] - 2026-02-19
 
 ### Added
