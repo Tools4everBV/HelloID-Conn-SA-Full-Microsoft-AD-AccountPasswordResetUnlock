@@ -120,7 +120,7 @@
         },
         "hideExpression": "!model[\"blnreset\"]",
         "type": "input",
-        "summaryVisibility": "Show",
+        "summaryVisibility": "Hide element",
         "requiresTemplateOptions": true,
         "requiresKey": true,
         "requiresDataSource": false
