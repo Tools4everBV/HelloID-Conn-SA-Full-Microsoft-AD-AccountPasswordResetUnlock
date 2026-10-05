@@ -119,7 +119,7 @@
           }
         },
         "hideExpression": "!model[\"blnreset\"]",
-        "type": "input",
+        "type": "password",
         "summaryVisibility": "Hide element",
         "requiresTemplateOptions": true,
         "requiresKey": true,
