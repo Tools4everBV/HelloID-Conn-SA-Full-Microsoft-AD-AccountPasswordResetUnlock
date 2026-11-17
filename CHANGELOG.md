@@ -38,6 +38,12 @@ All notable changes to this project will be documented in this file. The format 
 ### Deprecated
 - Deprecated support for JSON array format in ADusersSearchOU variable (use semicolon-delimited string instead)
 
+## [1.0.2] - 2026-11-17
+
+### Fixed
+
+- Boolean values (`blnchangenextlogon`, `blnreset`, `blnunlock`) are now checked for null or empty before `[System.Convert]::ToBoolean()`, so a switch that was not touched in the form no longer causes an error
+
 ## [1.0.1] - 2021-11-03
 
 ### Added
