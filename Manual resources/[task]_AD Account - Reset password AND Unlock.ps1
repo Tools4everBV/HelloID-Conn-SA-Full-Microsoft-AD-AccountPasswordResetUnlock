@@ -1,9 +1,9 @@
 # variables configured in form
 $user = $form.gridUsers
-$blnreset = [System.Convert]::ToBoolean($form.blnreset)
+$blnreset = if ([string]::IsNullOrWhiteSpace($form.blnreset)) { $false } else { [System.Convert]::ToBoolean($form.blnreset) }
 $password = $form.password
-$blnchangePasswordAtLogon = [System.Convert]::ToBoolean($form.blnchangenextlogon)
-$blnunlock = [System.Convert]::ToBoolean($form.blnunlock)
+$blnchangePasswordAtLogon = if ([string]::IsNullOrWhiteSpace($form.blnchangenextlogon)) { $false } else { [System.Convert]::ToBoolean($form.blnchangenextlogon) }
+$blnunlock = if ([string]::IsNullOrWhiteSpace($form.blnunlock)) { $false } else { [System.Convert]::ToBoolean($form.blnunlock) }
 
 # Set debug logging
 $VerbosePreference = "SilentlyContinue"
